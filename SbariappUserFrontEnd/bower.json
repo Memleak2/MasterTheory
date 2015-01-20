@@ -1,0 +1,5 @@
+{ 
+     "dependencies": {
+    "angularjs-unstable": "~1.1.4"
+  }
+}

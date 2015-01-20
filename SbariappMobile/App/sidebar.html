@@ -1,0 +1,21 @@
+<h1 class="app-name">
+    
+        <img src="images/bg_category.jpg" />
+   
+</h1>
+
+
+
+<div class="scrollable sidebar-scrollable">
+    <h2>
+        Categorie
+    </h2>
+  <div class="scrollable-content">
+    <div class="list-group">
+        <a ng-repeat="category in categories" class=" list-group-item" ng-click="getEventsByCategory(category)" style="cursor:pointer;">
+            {{category}}
+            <i class="fa fa-chevron-right pull-right"></i>
+        </a>
+    </div>
+  </div>
+</div>

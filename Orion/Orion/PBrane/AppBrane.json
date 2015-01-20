@@ -1,0 +1,21 @@
+﻿{
+    "_id": "",
+    "EventName": "",
+    "Owner": "",
+    "When": "",
+    "Where": "",
+    "Category": "",
+    "ShortDescription": "",
+    "Thumb": "",
+    "Img1": "",
+    "Img2": "",
+    "Img3": "",
+    "ExtendedDescription": "",
+    "Suggested": "",
+    "Telephone": "",
+    "Email": "",
+    "Stats": {
+        "ViewedNumber": "",
+        "GoingTo": ""
+    }
+}

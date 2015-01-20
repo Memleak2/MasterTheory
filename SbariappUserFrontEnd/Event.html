@@ -1,0 +1,146 @@
+﻿
+<div ng-init="in()">
+
+</div>
+<div class="row">
+<div class="col-lg-6">
+    <h1>Inserisci i dettagli del tuo evento</h1>
+    <br />
+    <form role="form" name="formEvent">
+        <div class="form-group input-group">
+            <label>Nome dell'evento</label>
+            <input class="form-control" placeholder="Dai un nome esplicativo e di impatto..." ng-model="event.EventName" name="EventName" required/>
+        </div>
+        <div class="form-group">
+            <label>Seleziona una delle categorie in cui pensi che il tuo evento possa rientrare...</label>
+            <select class="form-control" ng-model="event.Category" ng-disabled="event.Category">
+                <option>Pizza</option>
+                <option>Musica</option>
+                <option>Birra</option>
+                <option>Live</option>
+                <option>Veg</option>
+            </select>
+        </div>
+        <div class="form-group input-group">
+            <label>...Oppure definiscine una tu</label>
+            <input class="form-control" placeholder="Il team di sbariapp si preserva il diritto di modificarla" ng-model="event.Category">
+        </div>
+        <div class="form-group input-group">
+            <label>...Dicci per quale situazione andrebbe bene questo evento (Tips)</label>
+            <select class="form-control" ng-model="event.AdvisedFor">
+                <option>Sono con gli amici</option>
+                <option>Sono con la mia ragazza</option>
+                <option>Gay friendly</option>
+                <option>Im' Veg!</option>
+            </select>
+        </div>
+        <div class="form-group input-group">
+            <label>Presso il locale</label>
+            <input class="form-control" placeholder="Il nome del tuo locale" ng-model="event.Owner" required/>
+        </div>
+        <div class="form-group input-group">
+            <label>In via...</label>
+            <input class="form-control" id="via" placeholder="Via/Traversa/P.zza e civico" required />
+        </div>
+        <div class="form-group input-group">
+            <label>...Comune di</label>
+            <select class="form-control" ng-model="event.Where">
+                <option>Aversa</option>
+                <option>Napoli</option>
+                <option>Fuorigrotta</option>
+                <option>Casalnuovo</option>
+                <option>Frattamaggiore</option>
+            </select>
+            </div>
+        <div class="form-group input-group">
+            <label>In data</label>
+            <input type="text" class="form-control"  id="datepicker" ng-model="event.When" placeholder="Oggi" required />
+        </div>
+        <div class="form-group input-group">
+            <label>...Alle ore</label>
+            <input type="text" id="hours" class="form-control" placeholder="Segna l'ora approssimativa dell'evento'" maxlength="2" required />
+            </div>
+            <div class="form-group input-group">
+                <label>Email di riferimento</label>
+                <input type="email" class="form-control" placeholder="Inserisci una mail affinchè gli utenti possano contattarti" ng-model="event.Email" required />
+            </div>
+            <div class="form-group input-group">
+                <label>Telefono di riferimento</label>
+                <input type="tel" class="form-control" placeholder="Inserisci il numero per eventuali prenotazioni..." ng-model="event.Telephone">
+            </div>
+            <div class="form-group input-group">
+                <label>Fornisci agli utenti una breve descrizione del tuo evento (Max 70 caratteri)</label>
+                <input type="text" class="form-control" placeholder="Inserisci il numero per eventuali prenotazioni..." ng-model="event.ShortDescription" maxlength="70" required />
+            </div>
+            <div class="form-group input-group">
+                <label>Dai una descrizione più dettagliata del tuo evento (Max 300 caratteri)</label>
+                <textarea class="form-control" rows="5" maxlength="300" ng-model="event.ExtendedDescription" required></textarea>
+            </div>
+        <button ng-click="setEvent(thumb, image, image2, image3, event)" type="submit" class="btn btn-default">Pubblica questo evento!</button>
+</form>
+</div>
+    <div class="row">
+        <div align="right">
+            <div class="col-lg-6">
+
+                <h1>Carica le foto per il tuo evento</h1>
+                <div>
+                    <label for="inputIcon">Icona dell' evento (Obbligatoria)</label>
+
+                    <input id="inputIcon"
+                           class="btn btn-default"
+                           type="file"
+                           accept="image/*"
+                           image="thumb"
+                           resize-max-height="300"
+                           resize-max-width="250"
+                           resize-quality="0.7" />
+                    <img ng-src="{{thumb.resized.dataURL}}" />
+                </div>
+                <hr />
+                <div>
+                    <label for="inputImage1">Immagine 1</label>
+
+                    <input id="inputImage1"
+                           class="btn btn-default"
+                           type="file"
+                           accept="image/*"
+                           image="image"
+                           resize-max-height="300"
+                           resize-max-width="250"
+                           resize-quality="0.7" />
+                    <img ng-src="{{image.resized.dataURL}}" />
+                </div>
+                <hr />
+                <div>
+                    <label for="inputImage2">Immagine 2</label>
+
+                    <input id="inputImage2"
+                           class="btn btn-default"
+                           type="file"
+                           accept="image/*"
+                           image="image2"
+                           resize-max-height="300"
+                           resize-max-width="250"
+                           resize-quality="0.7" />
+                    <img ng-src="{{image2.resized.dataURL}}" />
+                </div>
+                <hr />
+                <div>
+                    <label for="inputImage3">Immagine 3</label>
+
+                    <input id="inputImage3"
+                           class="btn btn-default"
+                           type="file"
+                           accept="image/*"
+                           image="image3"
+                           resize-max-height="300"
+                           resize-max-width="250"
+                           resize-quality="0.7" />
+                    <img ng-src="{{image3.resized.dataURL}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+

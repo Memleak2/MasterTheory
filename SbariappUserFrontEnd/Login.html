@@ -1,0 +1,55 @@
+﻿<form class="form-horizontal" role="form" ng-init="initDialog()">
+    <div class="form-group">
+        <label for="inputUsername" class="col-sm-4 control-label">Username</label>
+        <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputUsername" placeholder="Username" ng-model="login.email" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-4 control-label">Password</label>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="login.password" required />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <button type="submit" class="btn btn-default" ng-click="logIn(login.email, login.password)">Log In</button>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <label ng-show="msg" for="msg" style="color:red" class="col-sm-4 control-label">{{msg}}</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-10">
+            <button type="submit" class="btn btn-default" >Password dimenticata?</button>
+            <button type="button" ng-click="op()" class="btn btn-default">Registati</button>
+        </div>
+    </div>
+</form>
+
+<div id="dialog-form" title="Benvenuto alla registrazione di sbariapp">
+    <h1>Compila i campi elencati per cominciare subito a pubblicare eventi</h1>
+    <br />
+    <form role="form" name="formEvent">
+        <div class="form-group">
+            <label>La tua email@</label>
+            <input class="form-control" placeholder="La tua email servirà per effettuare l'accesso al pannello" type="email" ng-model="email"  name="Email" required />
+        </div>
+        <div class="form-group">
+            <label>Imposta una password</label>
+            <input class="form-control" type="password" placeholder="Ricordati di tenere al sicuro la tua password"  ng-model="pwd" name="pass" required />
+        </div>
+        <div class="form-group">
+            <label>Il tuo numero di telefono</label>
+            <input class="form-control" placeholder="Potrebbe servire nel caso volessimo comunicarti qualcosa..." ng-model="telephone">
+        </div>
+        <br />
+        <img />
+        <img src="images/gif-load.gif" ng-show="loading" />
+        <button ng-click="registerUser(email,pwd,telephone)" ng-show="!loading" type="submit" class="btn btn-default">Registrati!</button>
+        <label style="color:red">{{regMessage}}</label>
+    </form>
+</div>
+

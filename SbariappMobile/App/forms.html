@@ -1,0 +1,24 @@
+<div class="scrollable">
+    <div class="scrollable-content section" ng-init="checkEventIsSetted()">
+
+        <form action="" id="">
+            <div bs-panel title="{{event.EventName}}">
+                <br />
+                <label for="">Presso:&nbsp;{{event.Owner}}</label><br />
+                <label for="">Localit&aacute;:&nbsp;{{event.Where}}</label><br />
+                <label for="">Quando:&nbsp;{{event.When | date : short}}</label><br />
+                <label for="">Persone che hanno visualizzato questo evento:&nbsp;</label><label id="viewed" for="">{{event.Stats.ViewedNumber}}</label> <br />
+                <label for="">Persone che parteciperanno a questo evento:&nbsp;</label><label id="going"  for="">{{event.Stats.GoingTo}}</label> <br />
+                <label for="">Descrizione dell'evento:</label><br /><br />
+                {{event.ExtendedDescription}}
+            </div>
+            <div bs-panel title="Contatti">
+                <br />
+                <label for="">Telefono:&nbsp;{{event.Telephone}}</label><br />
+                <label for="">@:&nbsp;{{event.Email}}</label><br />
+            </div>
+            <a href="#/carousel" class="btn btn-navbar"><i class="fa fa-camera-retro fa-navbar"></i>Visualizza le foto</a><br />
+            <a id="gt" ng-click="setEventPopularity(event,'GoingTo')" class="btn btn-navbar"><i class="fa fa-camera-retro fa-navbar"></i>Ci vado!</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+{
+  "name": "Sbariapp",
+  "homepage": "https://github.com/mcasimir/mobile-angular-ui",
+  "authors": [
+    "Memleak <gt.tortorella@gmail.com>"
+  ],
+  "description": "App for Naples event maked in mobile responsive Angular js",
+  "main": [
+    "dist/css/mobile-angular-ui-hover.css",
+    "dist/css/mobile-angular-ui-base.css",
+    "dist/css/mobile-angular-ui-desktop.css",
+    "dist/js/mobile-angular-ui.min.js",
+    "dist/fonts/FontAwesome.otf",
+    "dist/fonts/fontawesome-webfont.eot",
+    "dist/fonts/fontawesome-webfont.svg",
+    "dist/fonts/fontawesome-webfont.ttf",
+    "dist/fonts/fontawesome-webfont.woff"
+  ],
+  "keywords": [
+    "Sbariapp",
+    "angularjs",
+    "Naples",
+    "Events",
+    "Giuseppe Tortorella",
+    "angular",
+    "nodejs",
+    "mongoDb"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "site",
+    "experiments",
+    "gh-pages",
+    "tmp"
+  ],
+  "devDependencies": {
+    "font-awesome": "4",
+    "bootstrap": "3",
+    "fastclick": "1",
+    "overthrow": "0.7"
+  }
+}

@@ -1,0 +1,266 @@
+a.list-group-item{
+	color: #00beea;
+	padding: 15px;
+}
+.list-group-item, a.list-group-item{
+	border-bottom: 1px solid #000;
+}
+.category{
+	color: #fff;
+}
+h1{
+	margin: 0;
+	padding: 0;
+}
+.navbar-brand{
+	margin: 0;
+	padding: 3px 0 0 15px;
+}
+.bg{
+	background-image: url('images/background.jpg');
+	width: 500px;
+	height: 79px;
+}
+.scrollable-content{
+	background: #fff;
+	border: none;
+}
+.bg-color-black{
+	background: #242424;
+}
+.bg-color-white{
+	background: #fff;
+	border: none;
+}
+.bg-color-gray{
+	background: #d2d2d2;	
+}
+.font-color-black{
+	color: #242424;
+}
+.font-color-red{
+	color: #e5322d;
+}
+.home-content{
+	border: none;
+	margin: 30px 0 0 0;
+}
+#sbariapp-highlight{
+	margin: 50px auto;
+	padding: 0;
+}
+#sbariapp-highlight ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#sbariapp-highlight ul li{
+	margin: 10px 0 0 0;
+}
+#sbariapp-highlight ul li a:hover{
+	color: #242424;
+	text-decoration: underline;
+}
+.legend-color{
+	color: #2eaadc;
+}
+.form-control{
+	border-color: #ccc!important;
+	width: 60%;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0!important;
+	color: #ccc;
+}
+.btn-block{
+	width: 60%;
+	height: 50px;
+	margin: 0 auto;
+}
+/*LISTA EVENTI*/
+.navbar-brand-center{
+	float: none;
+	position: inherit;
+}
+.clear{
+	clear: both;
+}
+#date{
+	background: #292929;
+	width: 100%;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 18px;
+}
+.sbariapp-event{
+	background: #fff;
+	height: auto;
+	max-width: 30.5%;
+	margin: 20px auto;
+	box-shadow: 0px 3px 5px #A5A5A5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.sbariapp-event img{
+	height: 220px;
+}
+.sbariapp-text-event{
+	padding: 0 10px;
+}
+.sbariapp-title-event{
+	font-size: 20px;
+	color: #2ca7db;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px 0 0 0;
+}
+.sbariapp-local-event{
+	font-size: 16px;
+	color: #454545;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 5px 0 0 0;
+}
+.sbariapp-text{
+	font-size: 12px;
+	color: #7b7b7b;
+	margin: 5px 0 10px 0;
+}
+.img-rounded{
+	border-radius: 6px 6px 0 0;
+}
+.sbariapp-event-info{
+	border-top: 1px solid #d7d7d7;
+	margin: 0;
+	padding: 5px 0;
+}
+.sbariapp-event-info ul{
+	margin: 0;
+	padding: 0;
+}
+.sbariapp-event-info ul li{
+	margin: 0 10px 0 5px;
+	color: #5F5F5F;
+}
+.float{
+	float: left;
+	margin: 20px 0 20px 20px;
+}
+@media only screen and (max-width: 700px) {
+	.sbariapp-event{
+		max-width: 40%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.sbariapp-event{
+		max-width: 90%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.sbariapp-event{
+		max-width: 90%;
+	}
+	.form-control{
+		width: 90%;
+	}
+	.btn-block{
+		width: 90%;
+	}
+}
+/*FINE LISTA EVENTI*/
+/*EVENTO APERTO*/
+.sbariapp-event-open{
+	background: #fff;
+	height: auto;
+	max-width: 95%;
+	margin: 20px auto;
+	box-shadow: 0px 3px 5px #A5A5A5;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.sbariapp-event-open img{
+	height: 220px;
+}
+.sbariapp-event-open-info{
+	background: #d7d7d7;
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding: 3px 0;
+}
+.sbariapp-event-open-info ul{
+	margin: 0;
+	padding: 0;
+}
+.sbariapp-text-event-open{
+	padding: 0 10px;
+}
+.sbariapp-event-open-info ul li{
+	margin: 0 20px 0 10px;
+	color: #5F5F5F;
+}
+.sbariapp-text-event-open ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sbariapp-text-event-open ul li{
+	margin: 0 10px 10px 0;
+	padding: 0;
+}
+.sbariapp-text-event-open img{
+	height: 5%;
+	width: 22%;
+	float: left;
+	margin: 0 20px 10px 0;
+}
+@media only screen and (max-width: 200px),(max-width: 300px),(max-width: 400px),(max-width: 500px),(max-width: 600px),(max-width: 700px),(max-width: 800px),(max-width: 900px),(max-width: 1000px){
+	.sbariapp-text-event-open img{
+		height: 20%;
+		width: 44%;
+		float: left;
+		margin: 0 20px 10px 0;
+	}
+}
+.sbariapp-where{
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.sbariapp-where h2{
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+.sbariapp-where h2 span{
+	color: #2CA7DA;	
+	font-size: 20px;
+	
+}
+.sbariapp-where img{
+	width: 45px;
+	height:55px;
+}
+.sbariapp-btn{
+	padding: 30px 0;
+	width: 100%;
+}
+em{
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+	margin: 0 5px 0 0 ;
+}
+
+
+
+
+
+
+
+/*FINE EVENTO APERTO*/

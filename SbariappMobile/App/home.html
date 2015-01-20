@@ -1,0 +1,31 @@
+<div class="scrollable">
+    <div class="scrollable-content">
+
+        <div class="list-group text-center">
+            <div class="list-group-item list-group-item-home bg-color-white">
+                <h1><img src="images/logo-sbariapp-home.jpg" width="309" height="88" alt="sbariapp" /></h1>
+            </div>
+            <div class="list-group-item home-content">
+                <div class="media-body">
+                    <form name="searchingForm" ng-init="UnsetEvent()">
+                        <fieldset>
+                            <legend class="legend-color">ricerca eventi per parola chiave</legend>
+                            <div class="form-group has-success has-feedback">
+                                <input type="name" ng-model="searchKeywords" class="form-control" placeholder="es. birra, pizza..." ng-required="!searchKeywords">
+                                
+                            </div>
+                        </fieldset>
+                        <button class="btn btn-primary btn-block" ng-click="(!searchingForm.searcher.$error.required) ? getEventsByKeywords(searchKeywords) : showMessage()">CERCA</button>
+                        <div id="sbariapp-highlight">
+                            <ul>
+                                <li><a ng-click="getEventsByAdvised('Friends')" class=" font-color-black">Sono con un gruppo di amici</a></li>
+                                <li><a ng-click="getEventsByAdvised('GirlFriend')" class="font-color-black">Sono in dolce compagnia</a></li>
+                                <li><a ng-click="getEventsByAdvised('Gay')" class="font-color-black">gay friendly</a></li>
+                                <li><a ng-click="getEventsByAdvised('Advised')" class="font-color-red">i love trash</a></li>
+                            </ul>
+                        </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>

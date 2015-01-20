@@ -1,0 +1,35 @@
+﻿<div class="form-group">
+    <label>Cerca tra gli eventi</label>
+    <input class="form-control" placeholder="Inserisci qui una parola per filtrare l'elenco..." ng-model="query">
+</div>
+
+<div class="col-lg-6">
+    <h2>{{events.length}} {{gridHeader}}</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Nome evento</th>
+                    <th>Presso</th>
+                    <th>Data dell'evento</th>
+                    <th>Visite ricevute</th>
+                    <th>Going to ricevuti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="event in events | filter:query | orderBy:'When' ">
+                    <td>{{event.Category}}</td>
+                    <td>{{event.EventName}}</td>
+                    <td>{{event.Owner}}</td>
+                    <td>{{event.When | date : short }}</td>
+                    <td>{{event.Stats.ViewedNumber}}</td>
+                    <td>{{event.Stats.GoingTo}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="height:600px;">
+
+</div>

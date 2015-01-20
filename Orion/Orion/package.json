@@ -1,0 +1,17 @@
+{
+  "name": "Orion",
+  "version": "0.0.0",
+  "description": "Orion",
+  "main": "Bok.js",
+  "author": {
+    "name": "gtortorella",
+    "email": ""
+  },
+  "dependencies": {
+    "fibers": "^1.0.2",
+    "mongo-sync": "^0.3.2",
+    "mongodb": "^1.4.19",
+    "mysql": "^2.5.2",
+    "randomstring": "^1.0.3"
+  }
+}

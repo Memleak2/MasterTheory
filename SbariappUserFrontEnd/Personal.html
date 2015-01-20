@@ -1,0 +1,14 @@
+﻿<form role="form" name="formEvent" ng-init="getUserInfo()">
+    <div class="form-group">
+        <span>Email di registrazione     </span>
+        <label>{{email}}</label>
+    </div>
+    <div class="form-group">
+        <span>Telefono    </span>
+        <label>{{telephone}}</label>
+    </div>
+    <div class="form-group">
+        <span>Registrato dal     </span>
+        <label>{{since | date : short}}</label>
+    </div>
+</form>

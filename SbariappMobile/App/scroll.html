@@ -1,0 +1,30 @@
+<a ng-repeat="d in dummy" style="visibility:hidden">
+    <input type="text" ng-init="toggle('mainSidebar')">{{event.EventName}}/>
+</a>
+
+<div class="scrollable" ng-init="checkEventExists()">
+    <div class="scrollable-content bg-color-gray"  ng-init="UnsetEvent()">
+        <div class="navbar-brand-center">
+            <input type="search" class="form-control app-search" placeholder="{{events.length}} eventi trovati in {{events[0].Category}} Cerca..." ng-model="query" style="border:groove; width:100%" />
+        </div>
+        <div class="clear"></div>
+
+        <div class="sbariapp-eventi">
+            <div ng-repeat="event in events | filter:query" ng-click="setSelectedEvent(event)" style="cursor:pointer" class="sbariapp-event float">
+                <img ng-src="{{event.Thumb}}" class="img-responsive img-rounded" alt="" />
+                <div class="sbariapp-text-event">
+                    <h2 class="sbariapp-title-event">{{ event.EventName }}</h2>
+                    <h3 class="sbariapp-local-event">{{event.Owner}}</h3>
+                    <p class="sbariapp-text"> {{event.ShortDescription}}</p>
+                    <div class="sbariapp-event-info">
+                        <ul class="icon-list">
+                            <li class="sbariapp-people fa fa-user"> 2000</li>
+                            <li class="sbariapp-date fa fa-calendar"> {{event.When | date : 'MMM d, y'}}</li>
+                            <li class="sbariapp-hours fa fa-clock-o">  {{event.When | date : 'hh:mm a'}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

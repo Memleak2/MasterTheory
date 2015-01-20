@@ -1,0 +1,4 @@
+C:\Users\gtortorella\Desktop\Sbariapp\Orion\Orion\obj\Debug\Orion.njsprojResolveAssemblyReference.cache
+C:\Users\gtortorella\Desktop\Sbariapp\Orion\Orion\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Development\Project\Sbariapp\Orion\Orion\obj\Debug\Orion.njsprojResolveAssemblyReference.cache
+D:\Development\Project\Sbariapp\Orion\Orion\bin\Microsoft.NodejsTools.WebRole.dll
