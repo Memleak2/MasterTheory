@@ -1,7 +1,7 @@
 # MasterTheory
 A simple 3-tier responsive mobile-application where the architecture is inspired to the Steven Hawking Theories
 
- Questo progetto è semplicementeinfrastruttura di un applicazione che fornisce eventi mondani per la regione Campania. 
+ Questo progetto è semplicemente infrastruttura di un applicazione che fornisce eventi mondani per la regione Campania. 
  L'architettura in ogni suo punto è ispirata alle teorie del famoso fisico Steven Hawking, troviamo quindi riferimenti ai multimondi
  ,la teoria delle p-brane, le collisioni dei globuli di bok, orizzonte degli eventi , singolarità ecc.
  
